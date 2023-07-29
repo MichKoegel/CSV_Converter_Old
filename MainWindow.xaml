@@ -1,0 +1,36 @@
+﻿<Window x:Class="CSV_Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSV_Converter"
+        mc:Ignorable="d"
+        Title="CSV Converter" Height="200" Width="750">
+    <Grid Name="MainGrid" Background="Silver">
+        <DockPanel>
+            <TextBlock TextWrapping="Wrap" Height="25" FontSize="16" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="Left">Map</TextBlock>
+            <TextBox Name="mapInput" Height="25" FontSize="16" Width="120" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MaxLength="80" Text="Unknown" TextChanged="MapInput_TextChanged" />
+
+            <TextBlock TextWrapping="Wrap" Height="25" FontSize="16" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="Left">Model</TextBlock>
+            <TextBox Name="modelInput" Height="25" FontSize="16" Width="120" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MaxLength="80" Text="" TextChanged="ModelInput_TextChanged" />
+
+            <TextBlock TextWrapping="Wrap" Height="25" FontSize="16" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="Left">User</TextBlock>
+            <TextBox Name="userInput" Height="25" FontSize="16" Width="120" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MaxLength="80" Text="Test" TextChanged="UserInput_TextChanged" />
+
+            <TextBlock TextWrapping="Wrap" Height="25" FontSize="16" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="Left">Name</TextBlock>
+            <TextBox Name="nameInput" Height="25" FontSize="16" Width="120" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MaxLength="80" Text="Caligo"  TextChanged="NameInput_TextChanged" />
+        </DockPanel>
+        <DockPanel>
+            <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,25" Width="75" Height="25">
+                <Button x:Name="OpenFile" FontSize="16" Click="OpenFile_Click" Content="Open File" Width="75"/>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,25" Width="75" Height="25">
+                <Button x:Name="Convert" FontSize="16" Click="Convert_Click" Content="Convert" Width="75"/>
+            </WrapPanel>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0">Converter status</TextBlock>
+            <TextBox FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Name="txtStatus" Height="25" Width="600" Margin="0,0,0,0"></TextBox>
+        </DockPanel>
+    </Grid>
+</Window>

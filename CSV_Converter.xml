@@ -1,0 +1,128 @@
+<CSV_CONVERTER delimiter=";" >
+<TYPE_SETTINGS>
+  <CIR featurename="Circle">
+	<INPUT>
+	 <ARG id="0" name="type" type="string" />
+	 <ARG id="1" name="X" />
+	 <ARG id="2" name="Y" />
+	 <ARG id="3" name="Z" />
+	 <ARG id="4" name="i" />
+	 <ARG id="5" name="j" />
+	 <ARG id="6" name="k" />
+     <ARG id="7" name="radius" />
+	</INPUT>
+	<OUTPUT>
+	 <OUT id="0" name="type" type="string" />
+	 <OUT id="1" name="featurename" type="string" />
+	 <OUT id="2" name="X" decimaldigits="2" />
+	 <OUT id="3" name="Y" decimaldigits="2" />
+	 <OUT id="4" name="Z" decimaldigits="2" />
+	 <OUT id="5" name="i" decimaldigits="3" />
+	 <OUT id="6" name="j" decimaldigits="3" />
+	 <OUT id="7" name="k" decimaldigits="3" />
+	 <OUT id="8" name="Attr1" type="string" />
+     <OUT id="9" name="Var1" type="double" decimaldigits="2" />
+	 <OUT id="10" name="Var2" type="double" decimaldigits="2" />
+	 <OUT id="11" name="i1" decimaldigits="3" />
+	 <OUT id="12" name="j1" decimaldigits="3" />
+	 <OUT id="13" name="k1" decimaldigits="3" />
+	 <OUT id="14" name="Orient" type="string" default="Inner" />
+	 <OUT id="15" name="TOLname" type="string" />
+	 <OUT id="16" name="Layer" type="string" />
+	 <OUT id="17" name="Thick" default="0" decimaldigits="2" />
+	 <OUT id="18" name="ZGS" type="string" />
+	 <OUT id="19" name="Rad" decimaldigits="2" />
+	 <OUT id="20" name="TXTname" type="string" />
+	 <OUT id="21" name="MSTname" type="string" />
+	 <OUT id="22" name="Flange Radius" decimaldigits="2" />
+	 <OUT id="23" name="Flange Height" decimaldigits="2" />
+	 <OUT id="24" name="i2" decimaldigits="2" />
+	 <OUT id="25" name="j2" decimaldigits="2" />
+	 <OUT id="26" name="k2" decimaldigits="2" />
+	</OUTPUT>
+  </CIR>
+  <PLN featurename="Plane">
+	<INPUT>
+	 <ARG id="0" name="type" type="string" />
+	 <ARG id="1" name="X" />
+	 <ARG id="2" name="Y" />
+	 <ARG id="3" name="Z" />
+	 <ARG id="4" name="i" />
+	 <ARG id="5" name="j" />
+	 <ARG id="6" name="k" />
+	</INPUT>
+    <OUTPUT>
+	 <OUT id="0" name="type" type="string" />
+	 <OUT id="1" name="featurename" type="string" />
+	 <OUT id="2" name="X" decimaldigits="2" />
+	 <OUT id="3" name="Y" decimaldigits="2" />
+	 <OUT id="4" name="Z" decimaldigits="2" />
+	 <OUT id="5" name="i" decimaldigits="3" />
+	 <OUT id="6" name="j" decimaldigits="3" />
+	 <OUT id="7" name="k" decimaldigits="3" />
+	 <OUT id="8" name="Attr1" type="string" />
+     <OUT id="9" name="Var1" type="double" decimaldigits="2" />
+	 <OUT id="10" name="Var2" type="double" decimaldigits="2" />
+	 <OUT id="11" name="i1" decimaldigits="3" />
+	 <OUT id="12" name="j1" decimaldigits="3" />
+	 <OUT id="13" name="k1" decimaldigits="3" />
+	 <OUT id="14" name="Orient" type="string" default="" />
+	 <OUT id="15" name="TOLname" type="string" />
+	 <OUT id="16" name="Layer" type="string" />
+	 <OUT id="17" name="Thick" default="0.00" decimaldigits="2" />
+	 <OUT id="18" name="ZGS" type="string" />
+	 <OUT id="19" name="Rad" decimaldigits="2" />
+	 <OUT id="20" name="TXTname" type="string" />
+	 <OUT id="21" name="MSTname" type="string" />
+	 <OUT id="22" name="Flange Radius" decimaldigits="2" />
+	 <OUT id="23" name="Flange Height" decimaldigits="2" />
+	 <OUT id="24" name="i2" decimaldigits="2" />
+	 <OUT id="25" name="j2" decimaldigits="2" />
+	 <OUT id="26" name="k2" decimaldigits="2" />
+	</OUTPUT>
+  </PLN>
+  <CON featurename="Cone">
+	<INPUT>
+	 <ARG id="0" name="type" type="string" />
+	 <ARG id="1" name="X" />
+	 <ARG id="2" name="Y" />
+	 <ARG id="3" name="Z" />
+	 <ARG id="4" name="i" />
+	 <ARG id="5" name="j" />
+	 <ARG id="6" name="k" />
+	 <ARG id="7" name="halfangle" />
+	 <ARG id="8" name="r2" type="string" />
+	 <ARG id="9" name="h1" type="string" />
+	</INPUT>
+    <OUTPUT>
+	 <OUT id="0" name="type" type="string" />
+	 <OUT id="1" name="featurename" type="string" />
+	 <OUT id="2" name="X" decimaldigits="2" />
+	 <OUT id="3" name="Y" decimaldigits="2" />
+	 <OUT id="4" name="Z" decimaldigits="2" />
+	 <OUT id="5" name="i" decimaldigits="3" />
+	 <OUT id="6" name="j" decimaldigits="3" />
+	 <OUT id="7" name="k" decimaldigits="3" />
+	 <OUT id="8" name="Attr1" type="double" decimaldigits="2" />
+     <OUT id="9" name="Var1" type="double" decimaldigits="2" />
+	 <OUT id="10" name="Var2" type="double" decimaldigits="2" />
+	 <OUT id="11" name="i1" decimaldigits="3" />
+	 <OUT id="12" name="j1" decimaldigits="3" />
+	 <OUT id="13" name="k1" decimaldigits="3" />
+	 <OUT id="14" name="Orient" type="string" default="Inner" />
+	 <OUT id="15" name="TOLname" type="string" />
+	 <OUT id="16" name="Layer" type="string" />
+	 <OUT id="17" name="Thick" />
+	 <OUT id="18" name="ZGS" type="string" />
+	 <OUT id="19" name="Rad" decimaldigits="2" />
+	 <OUT id="20" name="TXTname" type="string" />
+	 <OUT id="21" name="MSTname" type="string" />
+	 <OUT id="22" name="Flange Radius" decimaldigits="2" />
+	 <OUT id="23" name="Flange Height" decimaldigits="2" />
+	 <OUT id="24" name="i2" decimaldigits="2" />
+	 <OUT id="25" name="j2" decimaldigits="2" />
+	 <OUT id="26" name="k2" decimaldigits="2" />
+	</OUTPUT>
+  </CON>
+</TYPE_SETTINGS>
+</CSV_CONVERTER>
