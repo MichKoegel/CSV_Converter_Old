@@ -6,6 +6,7 @@ Zur Konfigurationsdatei:
 Der Standarddatentyp eines Eingabe- bzw Ausgabeparameters ist "double" und muss nicht explizit angegeben werden.
 Die Eingabe- bzw Ausgabeparameter werden entsprechend der Indizes und eindeutigen Namen ausgelesen/berechnet/gesetzt.
 Über das Attribut "decimaldigits" kann man die Anzahl der Dezimalstellen eines Zahlenwerts festlegen. 
+Über das Attribut "default" kann man einem Ausgabewert einen Defaultwert zuweisen, der verwendet wird, wenn dieser Ausgabewert mit den Eingabewerten nicht berechnet werden kann. Der Standard für diesen Defaultwert ist "" und muss nicht explizit angegeben werden. 
 
 Anmerkung zu CON:
 Damit man verschiedene Definitionen des Kegels mit einer Konfiguration abdecken kann, müssen die variabel auftretenden Parameter (hier: h1 und r2) als String definiert werden, da sonst das Einlesen der Parameter einen Fehler erzeugt, da "" kein zulässiger Double-Wert ist.
