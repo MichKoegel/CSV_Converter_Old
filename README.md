@@ -1,5 +1,4 @@
 # CSV_Converter
-CSV_Converter
 Der CSV_Converter ist eine Testimplementierung eines Converters, welcher Daten aus einer Textdatei mit Komma-separiertem Inhalt zeilenweise ausliest, mit diesen Daten eine Geometrie erstellt und diese anschließend in einer Textdatei in einem vordefinierten (konfigurierbaren) Format abspeichert.
 Die App stellt dafür eine Oberfläche zur Verfügung mit welcher man eine Datei einlesen und den konvertierten Inhalt in eine Datei abspeichern kann. Es wird desweiteren der Status inklusive einer Fehlerbeschreibung des letzten Schrittes angezeigt.
 
